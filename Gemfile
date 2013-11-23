@@ -5,6 +5,8 @@ gem 'rails', '4.0.1'
 
 # Use Postgres as the database for Active Record
 gem 'pg'
+# Use faker gem to generate test data
+gem 'faker'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
