@@ -1,14 +1,10 @@
 class ArticlesController < ApplicationController
   def index
-    def index
-      @articles = Article.order(updated_at: :desc).limit(25)
-    end
+    @articles = Article.order(updated_at : :desc).limit(25)
   end
 
   def show
-    def show
-      @article = Article.find(params[:id])
-    end
+    @article = Article.find(params[:id])
   end
 
   def new
