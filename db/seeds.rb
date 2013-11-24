@@ -1,5 +1,10 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)
 
 # Create 8 seed categories
 categories = Category.create([
@@ -16,5 +21,6 @@ for i in 0..49
 
   # randomly assign one of the categories we just created
   category = Category.first(offset: rand(Category.count))
-  a = Article.create(title: title, content: content, categories: [category,])
+  a = Article.create(title: title, content: content, categories: [category])
 end
+
